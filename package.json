@@ -3,12 +3,16 @@
   "version": "1.0.0",
   "main": "no-typescript.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon --watch \"src/**/*.ts\" --exec ts-node src/index.ts",
+    "start": "lite-server"
   },
   "author": "",
   "license": "ISC",
   "description": "",
-  "dependencies": {
+  "devDependencies": {
+    "lite-server": "^2.6.1",
+    "nodemon": "^3.1.7",
     "typescript": "^5.6.2"
   }
 }
